@@ -1,0 +1,88 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Cor de fundo suave */
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #64636365; /* Fundo branco */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h2 {
+    color: #1a0283; /* Azul vívido */
+    margin-top: 0;
+    font-size: 24px; /* Tamanho de fonte maior */
+    text-align: center; /* Centralizar o texto */
+    text-transform: uppercase; /* Transformar texto em maiúsculas */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+h4 {
+    margin: 0;
+    font-size: 18px; /* Tamanho de fonte maior */
+    line-height: 1.5; /* Altura da linha aumentada para melhor legibilidade */
+    color: #333333; /* Cor do texto mais escura */
+    padding-left: 30px; /* Adiciona um recuo ao texto */
+}
+
+ul li {
+    border-left: 2px solid #007bff; /* Cor da borda mais forte */
+    padding-left: 30px; /* Adiciona um recuo ao texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    position: relative;
+}
+
+ul li::before {
+    content: "\2022"; /* Ponto de bala redondo */
+    color: #95a1ad; /* Cor do ponto de bala */
+    font-weight: bold; /* Texto em negrito */
+    font-size: 24px; /* Tamanho do ponto de bala aumentado */
+    position: absolute;
+    left: -20px; /* Posicionamento do ponto de bala */
+    top: 0;
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 10px;
+    }
+}
+.icon {
+    margin-right: 15px; /* Adiciona espaçamento à direita do ícone */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+ul li .icon {
+    width: 20px; /* Largura fixa para os ícones */
+    margin-right: 10px;
+    margin-left: -30px; /* Compensação para a margem padrão do ícone */
+}
+
+h4 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333333;
+}

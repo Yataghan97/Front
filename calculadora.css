@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5d5675b9; /* Nova cor de fundo */
+}
+
+.calculator {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgb(0, 140, 255);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative; /* Adicionamos position relative para que possamos aplicar o efeito de vidro */
+        background-color: rgba(235, 235, 235, 0.651); /* Altere a cor aqui */
+    }
+    
+
+
+.calculator-content {
+    padding: 20px;
+    background-color: rgba(255, 0, 0, 0.1); /* Cor e transparência do efeito de vidro */
+    backdrop-filter: blur(10px); /* Efeito de vidro */
+    border-radius: 10px; /* Mesmo raio de borda que a calculadora */
+}
+
+.calculator:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(196, 184, 184, 0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0a017a;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 40px); /* Levando em consideração o preenchimento do .calculator-content */
+    padding: 10px;
+    border: 1px solid #0a017a;
+    border-radius: 5px;
+}
+
+button {
+    width: calc(100% - 40px); /* Levando em consideração o preenchimento do .calculator-content */
+    margin-top: 10px; /* Espaçamento superior entre os botões */
+    padding: 10px;
+    background-color: #0a017a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #00d684;
+}

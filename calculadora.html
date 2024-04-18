@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média e Aprovação</title>
+    <link rel="stylesheet" href="calculadora.css">
+    <script src="calculadora.js" defer></script>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculadora de Média e Aprovação</h1>
+        <form id="gradeForm">
+            <div>
+                <label for="name">Nome do Aluno:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="grade1">Nota 1:</label>
+                <input type="number" id="grade1" name="grade1" min="0" max="10" required>
+            </div>
+            <div>
+                <label for="grade2">Nota 2:</label>
+                <input type="number" id="grade2" name="grade2" min="0" max="10" required>
+            </div>
+            <div>
+                <label for="grade3">Nota 3:</label>
+                <input type="number" id="grade3" name="grade3" min="0" max="10" required>
+            </div>
+            <button type="button" id="sumButton">Somar Notas</button>
+            <button type="button" id="averageButton">Calcular Média</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
